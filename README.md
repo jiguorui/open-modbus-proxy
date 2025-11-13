@@ -259,12 +259,6 @@ cargo clean && cargo build
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Related Documentation
-
-- [Implementation Summary](IMPLEMENTATION_SUMMARY.md) - Architecture and design decisions
-- [Test Coverage](TEST_COVERAGE.md) - Detailed test coverage analysis
-- [Code Review](CODE_REVIEW.md) - Code review notes
-
 ## Acknowledgments
 
 - Built with [tokio-modbus](https://github.com/slowtec/tokio-modbus)
