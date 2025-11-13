@@ -1,0 +1,19 @@
+[package]
+name = "modbus-proxy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter", "local-time", "json"] }
+tracing-appender = "0.2"
+
+# Enable both TCP client and TCP server
+tokio-modbus = { version = "0.17", default-features = false, features = ["tcp", "tcp-server"] }
